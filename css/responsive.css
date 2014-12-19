@@ -44,7 +44,7 @@
     .main .owl-controls {
         bottom: 100px;
     }
-}
+} 
 
 @media (max-width: 991px) {
 
@@ -140,7 +140,7 @@
     /* Screenshots Section */
     .screen img {
         display: block;
-        width: 98%;
+        width: 98%; 
         height: auto
     }
     .screens .owl-next {
@@ -229,7 +229,7 @@
         color: #fff;
     }
     .navbar-default .navbar-toggle,
-    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:hover, 
     .navbar-default .navbar-toggle:focus {
         color: #fff;
 
@@ -303,7 +303,7 @@
         width: 208px;
         margin-bottom: 10px!important;
     }
-
+    
     /* Features Section */
     .features {
         margin-top: 0px;
