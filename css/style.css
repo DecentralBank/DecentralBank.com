@@ -85,7 +85,7 @@ p {
     font-weight: 300;
     line-height: 2em;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000;
 }
 
 button {
@@ -147,7 +147,7 @@ figure img {
     width: 208px;
     text-align: center;
     font-weight: bold;
-    color: #fff;
+    color: #282828;
 }
 .nav-tabs>li>a:hover {
     color: #fff;
@@ -177,24 +177,24 @@ figure img {
 h1 {
     font-size: 42px;
     font-weight: 300;
-    color: #fff;
+    color: #000;
 }
 
 h2 {
     font-size: 38px;
-    color: #fff;
+    color: #000;
 }
 
 h3 {
     font-size: 24px;
-    color: #fff;
+    color: #000;
 }
 
 h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
 }
 
 /* Button Styles */
@@ -212,7 +212,7 @@ h4 {
 
 .btn:hover,
 .btn:focus {
-    color: #fff;
+    color: #000;
 }
 
 
@@ -316,7 +316,7 @@ section {
 /* Fixed Navbar */
 .navbar {
     min-height: 80px;
-    background-color: #000;
+    background-color: #fff;
     border: none;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -345,7 +345,7 @@ section {
 .navbar-default .navbar-nav>li>a {
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: #282828;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -355,13 +355,13 @@ section {
 /* Main Section */
 .main .main-section {
     max-width: 675px;
-    padding: 130px 0;
+    padding: 95px 0;
     margin: 0 auto;
     text-align: center;
 }
     .main .main-section h1 {
         color: #fff;
-        padding: 50px 0;
+        padding: 20px 0;
         line-height: 1.3em;
     }
     .main .main-section .btn-custom-border {
@@ -432,7 +432,7 @@ iframe {
 /* Features Section */
 
 .features {
-    background: #171616;
+    background: #f9f9f9;
 }
 
 .features .features-left {
@@ -713,7 +713,7 @@ iframe {
 
 /* Extra Section */
 .extra {
-    background-color: #171616;
+    background-color: #f9f9f9;
 }
 
 ul.extra-features {
