@@ -20,13 +20,13 @@ $(document).ready(function() {
 	});
 
 	// Fixed navigation
-	$(window).scroll(function() {
+/*	$(window).scroll(function() {
 	    if ($(window).scrollTop() > 500) {
 	        $('.navbar').addClass('fixednav');
 	    } else {
 	    	$('.navbar').removeClass('fixednav');
 	    }
-	});
+	});*/
 
 	// Initiat onepageNav.js
 	$('.nav').onePageNav({

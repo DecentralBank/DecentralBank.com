@@ -1,4 +1,4 @@
-/* Lamap App Landing Page Light version Stylesheet
+/* Lamap App Landing Page Dark version Stylesheet
 ====================================================== */
 
 /* HTML 5 reset & Bootstrap fixes */
@@ -49,6 +49,7 @@ ol {
 
 ul li {
     list-style:none;
+    color: #fff;
 }
 
 blockquote, q {
@@ -66,7 +67,7 @@ a {
     padding:0;
     font-size:100%;
     vertical-align:baseline;
-    color: #282828;
+    color: #fff;
     background:transparent;
     -webkit-transition: all .15s linear;
        -moz-transition: all .15s linear;
@@ -84,6 +85,7 @@ p {
     font-weight: 300;
     line-height: 2em;
     margin-bottom: 10px;
+    color: #000;
 }
 
 button {
@@ -175,20 +177,24 @@ figure img {
 h1 {
     font-size: 42px;
     font-weight: 300;
+    color: #000;
 }
 
 h2 {
     font-size: 38px;
+    color: #000;
 }
 
 h3 {
     font-size: 24px;
+    color: #000;
 }
 
 h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #000;
 }
 
 /* Button Styles */
@@ -206,8 +212,10 @@ h4 {
 
 .btn:hover,
 .btn:focus {
-    color: #fff;
+    color: #000;
 }
+
+
 
 .btn-custom-border {
     background: transparent;
@@ -215,6 +223,7 @@ h4 {
 }
 
 .btn-send {
+
     height: 62px;
     margin: 0 0 0 5px;
     vertical-align: top;
@@ -239,6 +248,7 @@ h4 {
          -o-transition: all .15s linear;
             transition: all .15s linear;
 }
+
 
 /* Strokes */
 
@@ -341,18 +351,15 @@ section {
 }
 
 /* Main Section */
+
+/* Main Section */
 .main .main-section {
     max-width: 675px;
-    padding: 60px 0;
+    padding: 95px 0;
     margin: 0 auto;
     text-align: center;
 }
     .main .main-section h1 {
-        color: #fff;
-        padding: 20px 0;
-        line-height: 1.3em;
-    }
-    .main .main-section h2 {
         color: #fff;
         padding: 20px 0;
         line-height: 1.3em;
@@ -375,7 +382,7 @@ a.mouse {
     a.mouse i {
         position: relative;
         color: #fff;
-    }
+        }
 
 /* Video Background Styles */
 .header-video {
@@ -484,7 +491,9 @@ iframe {
 
 
 /* Reviews Section */
-
+.reviews {
+    background-color: #171616;
+}
 .client-data {
     border-right: 1px solid #e1e1e1;
 }
@@ -493,7 +502,7 @@ iframe {
     float: left;
 }
     .client-image img {
-        border: 7px solid #f2f2f2;
+        border: 7px solid #fff;
         border-radius: 50%;
     }
 
@@ -511,6 +520,9 @@ iframe {
 
 
 /* Service Section */
+.services {
+    background-color: #1a1b1c;
+}
 
 .service {
     text-align: center;
@@ -579,6 +591,9 @@ iframe {
 
 
 /* Screenshot Section */
+.screenshots {
+    background-color: #171616;
+}
 
 .small-slider .owl-prev {
     position: absolute;
@@ -597,6 +612,7 @@ iframe {
     display: inline-block;
     position: relative;
 }
+
 .screens .screen img {
     border-radius: 4px;
 }
@@ -632,6 +648,9 @@ iframe {
     }
 
 /* Brief Section */
+.brief {
+    background-color: #1a1b1c;
+}
 
 .brief-content {
     max-width: 500px;
@@ -658,13 +677,14 @@ iframe {
 /* Packages Section */
 
 .packages {
-    background: #f9f9f9;
+    background: #181818;
     text-align: center;
 }
 
 .packages .package {
     border: 1px solid #e1e1e1;
     border-radius: 4px;
+    background-color: transparent;
     padding: 30px 0;
 }
 
@@ -677,6 +697,7 @@ iframe {
     font-size: 30px;
     font-weight: 300;
     display: block;
+    color: #fff;
 }
 
 .packages .package .package-features ul li {
@@ -686,10 +707,14 @@ iframe {
 .packages .package .btn {
     margin-top: 10px;
     width: 208px;
+    color: #fff;
 }
 
 
 /* Extra Section */
+.extra {
+    background-color: #f9f9f9;
+}
 
 ul.extra-features {
     max-width: 470px;
@@ -708,12 +733,12 @@ ul.extra-features .icon {
     float: left;
     text-align: center;
 }
-ul.extra-features i {
+ul.extra-features i{
     font-size: 38px;
 }
 
 .tabs {
-    margin-bottom   : 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -733,7 +758,7 @@ ul.extra-features i {
 /* Customer Section */
 .customers {
     padding: 50px 0px;
-    background: #f9f9f9;
+    background: #171616;
 }
 
 .customers .customer-slider .item img {
@@ -746,7 +771,11 @@ ul.extra-features i {
     opacity: 1;
 }
 
+
 /* Download Section */
+.download {
+    background-color: #1a1b1c;
+}
 
 .download .btn {
     width: 208px;
@@ -758,61 +787,12 @@ ul.extra-features i {
     margin: 0 auto;
 }
 
-/* Team Section */
-
-
-.team-member {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #fff;
-}
-
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-.team-member p {
-    margin-top: 0;
-}
-
-
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #fed136;
-}
-
 
 /* Footer Section */
 
 .footer {
     padding: 100px 0 20px 0;
-    background-color: #f2f2f2;
+    background-color: #171616;
 }
 
 .footer .underline-small {
@@ -867,6 +847,7 @@ ul.social-buttons li a:active {
 
 .footer i {
     font-size: 16px;
+    color: #333;
 }
 
 .footer h4 {
