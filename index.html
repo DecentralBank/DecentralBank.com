@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Colors -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="css/github-activity.css">
+
+
 </head>
 <body>
 <!-- begin nav -->
@@ -33,7 +37,7 @@
                 <span>Menu</span>
             </button>
             <!-- begin logo in navigation -->
-            <a class="navbar-brand" href="#main"><img src="imgs/decentralbank_logo_x46.png" alt="logo small"></a>
+            <a class="navbar-brand" href="#main"><img src="imgs/decentralbank_logo_black_x46.png" alt="logo small"></a>
             <!-- end logo in navigation -->
         </div>
 
@@ -41,9 +45,9 @@
             <ul class="nav navbar-nav pull-right">
                 <!-- begin navigation items -->
                 <li class="current"><a href="#main">Join</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Features</a></li>
-                <li><a href="#screenshots">News</a></li>
+                <li><a href="#extra">About</a></li>
+                <li><a href="#services">Status</a></li>
+                <li><a href="#screenshots">Press</a></li>
                 <li><a href="#packages">GitHub</a></li>
                 <li><a href="#team">Team</a></li>
                 <!-- end navigation items -->
@@ -65,7 +69,7 @@
             <div class="col-md-12">
                 <div class="main-section">
                     <!-- begin logo main section -->
-                    <img src="imgs/decentralbank_logo_x300.png" alt="logo">
+                    <img src="imgs/decentralbank_logo_300x.png" alt="logo">
                     <!-- end logo main section -->
                     <!--<h1>Decentral Bank</h1>-->
                     <h1>An open-source, decentralized, Bitcoin banking system right in your wallet</h1>
@@ -505,14 +509,29 @@
 
 <footer class="footer" id="footer">
     <div class="container">
-        <div class="row wow fadeIn animated animated" data-wow-offset="10" data-wow-duration="1.5s" style="visibility: visible; -webkit-animation: fadeIn 1.5s;">
-            <div class="col-md-12 text-center">
-                <p><small>Copyright © 2014 Decentral Bank</small></p>
+        <div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <div class="col-md-6 col-sm-6">
+                <div id="feed"></div>
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+<!--                <h4>Sample Links</h4>
+                <div class="underline-small"></div>-->
+                <div style="height:750px">
+                    <a class="twitter-timeline" href="https://twitter.com/decentralteam" data-widget-id="546503423299186688">Tweets by @decentralteam</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
             </div>
         </div>
-
     </div>
 </footer>
+<div class="copyright col-md-12">
+    <div class="row wow fadeIn animated animated" data-wow-offset="10" data-wow-duration="1.5s" style="visibility: visible; -webkit-animation: fadeIn 1.5s;">
+        <div class="col-md-12 text-center">
+            <p><small>Copyright © 2014 Decentral Bank</small></p>
+        </div>
+    </div>
+</div>
 
 <!-- Javascripts -->
 <script src="js/jquery-1.11.1.js"></script>
@@ -528,9 +547,20 @@
 <script src="js/script.js"></script>
 <script src="js/jquery.jigowatt.js"></script>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="js/github-activity.js"></script>
+
 <!-- Custom Javascript -->
 <script src="js/main.js"></script>
+<script>
+    GitHubActivity.feed({
+    username: "DecentralBank",
+    selector: "#feed",
+    limit: 5 // optional
+});
+</script>
 
+<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
 
 </body>
 </html>

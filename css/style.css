@@ -324,12 +324,17 @@ section {
 }
 
 .fixednav {
-    opacity: 1;
+    //opacity: 1;
     animation-name: slideDown;
     -webkit-animation-name: slideDown;
-    animation-duration: 0.5s;
-    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.9s;
+    -webkit-animation-duration: 0.9s;
     margin-top: 0px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";       /* IE 8 */
+    filter: alpha(opacity=90);  /* IE 5-7 */
+    -moz-opacity: 0.9;          /* Netscape */
+    -khtml-opacity: 0.9;        /* Safari 1.x */
+    opacity: 0.9;               /* Good browsers */
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -807,7 +812,18 @@ ul.social-buttons li a:active {
     background-color: #fed136;
 }
 
+.copyright {
+    padding: 100px 0 20px 0;
+}
 
+.copyright .underline-small {
+    margin: 20px auto;
+}
+
+.copyright small {
+    font-size: 13px;
+    color: #666;
+}
 /* Footer Section */
 
 .footer {
